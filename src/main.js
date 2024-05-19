@@ -1,4 +1,22 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+// Define the custom directive
+const app = createApp(App);
+
+app.directive('red', {
+  beforeMount(el) {
+    el.style.color = 'red';
+  }
+});
+
+const vTheme = {
+  mounted(el) {
+    el.style.backgroundColor = 'red';
+  }
+};
+
+app.directive('theme', vTheme);
+
+
+app.mount('#app');

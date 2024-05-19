@@ -4,6 +4,8 @@
     <input type="text" v-model="firstName" />
     <div>{{firstName}}</div>
     <InputCustom style="margin-top: 1rem " v-model="inputValue" ></InputCustom>
+    <div v-red>Custom directive</div>
+    <div v-theme>V-theme custom directive</div>
   </div>
 </template>
 
