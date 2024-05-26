@@ -16,6 +16,13 @@ const vTheme = {
   }
 };
 
+//filter
+app.config.globalProperties.$filters = {
+      toUpperCase(value) {
+        return value.toUpperCase();
+      }
+    };
+
 app.directive('theme', vTheme);
 
 

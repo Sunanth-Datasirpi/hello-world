@@ -27,6 +27,7 @@
   <NameList v-slot:default="slotProps">{{ slotProps.lastName }} {{ slotProps.firstName }}</NameList>
   <NameList v-slot:default="slotProps">{{ slotProps.lastName }}</NameList>
   <NameList v-slot:default="slotProps">{{ slotProps.firstName }}</NameList>
+  <CustomFilter></CustomFilter>
 </template>
 
 <script>
@@ -38,6 +39,7 @@ import VueDirectiveVue from './components/VueDirective.vue';
 import CustomButton from './components/CustomButton.vue';
 import CardSlot from './components/CardSlot.vue'
 import NameList from './components/NameList.vue';
+import CustomFilter from './components/CustomFilter.vue';
 
 export default {
   name: 'App',
@@ -50,6 +52,7 @@ export default {
     CustomButton,
     CardSlot,
     NameList,
+    CustomFilter,
   }
 }
 </script>
