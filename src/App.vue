@@ -28,6 +28,9 @@
   <NameList v-slot:default="slotProps">{{ slotProps.lastName }}</NameList>
   <NameList v-slot:default="slotProps">{{ slotProps.firstName }}</NameList>
   <CustomFilter></CustomFilter>
+  <h1>Getting value as Props</h1>
+  <PropsTutorial name="Sunanth" :rank="1"></PropsTutorial>
+  <PropsTutorial></PropsTutorial>
 </template>
 
 <script>
@@ -40,6 +43,7 @@ import CustomButton from './components/CustomButton.vue';
 import CardSlot from './components/CardSlot.vue'
 import NameList from './components/NameList.vue';
 import CustomFilter from './components/CustomFilter.vue';
+import PropsTutorial from './components/PropsTutorial.vue';
 
 export default {
   name: 'App',
@@ -53,6 +57,7 @@ export default {
     CardSlot,
     NameList,
     CustomFilter,
+    PropsTutorial,
   }
 }
 </script>
