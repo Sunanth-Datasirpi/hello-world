@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="This value is passed as a prop. Hello World is a new component" />
+  <!-- <HelloWorld msg="This value is passed as a prop. Hello World is a new component" />
   <Computed />
   <Conditional />
   <VModel />
@@ -30,34 +30,37 @@
   <CustomFilter></CustomFilter>
   <h1>Getting value as Props</h1>
   <PropsTutorial name="Sunanth" :rank="1"></PropsTutorial>
-  <PropsTutorial></PropsTutorial>
+  <PropsTutorial></PropsTutorial> -->
+  <DynamicComponent />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Computed from './components/Computed.vue';
-import Conditional from './components/Conditional.vue';
-import VModel from './components/VModel.vue';
-import VueDirectiveVue from './components/VueDirective.vue';
-import CustomButton from './components/CustomButton.vue';
-import CardSlot from './components/CardSlot.vue'
-import NameList from './components/NameList.vue';
-import CustomFilter from './components/CustomFilter.vue';
-import PropsTutorial from './components/PropsTutorial.vue';
+// import HelloWorld from './components/HelloWorld.vue'
+// import Computed from './components/Computed.vue';
+// import Conditional from './components/Conditional.vue';
+// import VModel from './components/VModel.vue';
+// import VueDirectiveVue from './components/VueDirective.vue';
+// import CustomButton from './components/CustomButton.vue';
+// import CardSlot from './components/CardSlot.vue'
+// import NameList from './components/NameList.vue';
+// import CustomFilter from './components/CustomFilter.vue';
+// import PropsTutorial from './components/PropsTutorial.vue';
+import DynamicComponent from './components/DynamicComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Computed,
-    Conditional,
-    VModel,
-    VueDirectiveVue,
-    CustomButton,
-    CardSlot,
-    NameList,
-    CustomFilter,
-    PropsTutorial,
+    // HelloWorld,
+    // Computed,
+    // Conditional,
+    // VModel,
+    // VueDirectiveVue,
+    // CustomButton,
+    // CardSlot,
+    // NameList,
+    // CustomFilter,
+    // PropsTutorial,
+    DynamicComponent,
   }
 }
 </script>
