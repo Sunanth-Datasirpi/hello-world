@@ -1,8 +1,12 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import mitt from 'mitt';
 
 // Define the custom directive
 const app = createApp(App);
+
+const emitter = mitt();
+export default emitter;
 
 app.directive('red', {
   beforeMount(el) {
